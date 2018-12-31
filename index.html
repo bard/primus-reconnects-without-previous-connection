@@ -1,0 +1,17 @@
+<html>
+  <body>
+    <script src="/primus/primus.js"></script>
+    <script>
+      const primus = new Primus({
+        manual: true,
+        reconnect: {
+          strategy: [ 'disconnect', 'online' ],
+        }
+      })
+
+      primus.on('open', () => {
+        console.log('primus: open')
+      })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "primus": "^7.3.2",
+    "sockjs": "^0.3.19"
+  }
+}
