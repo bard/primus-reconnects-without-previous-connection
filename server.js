@@ -6,7 +6,8 @@ const server = http.createServer((req, res) => {
   if (req.url === '/') {
     res.end(fs.readFileSync('index.html'))
   } else {
-    res.status(404).end()
+    res.writeHead(404)
+    res.end()
   }
 })
 
